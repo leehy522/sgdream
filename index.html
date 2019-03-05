@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+	<title>생각드림</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="작은 생각의 차이가 가져올 큰 꿈을 믿는 홍보 대행사">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="생각드림">
+	<meta property="og:description" content="작은 생각의 차이가 가져올 큰 꿈을 믿는 홍보 대행사">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="http://www.sgdream.co.kr">
+	<meta name="naver-site-verification" content="06c55fe6a19466ea5bc6b393632220f165c2f9c5"/>
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<link href="css/style1.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.25,maximum-scale=5.0,user-scalable=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.transit.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script src="js/script.js"></script>
+ </head>
+ <body>
+	<div class="scroll-indicator">scroll<i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+	<!--p class="mouse"><img src="img/mouse.png" alt="" / style="width:32px;"></p-->
+	<header class="site-header">
+		<a href="http://sgdream.co.kr" class="site-logo"><img src="img/logo_new.png" alt="생각드림 로고" /></a>
+	</header>
+
+	<!--nav class="site-navigation">
+		<button type="button" href="" class="to-idea"><span>idea</span></button>
+		<button type="button" href="" class="to-change"><span>change</span></button>
+		<button type="button" href="" class="to-everything"><span>everything</span></button>
+	</nav-->
+
+	<style type="text/css">
+	.site-navigation {position:fixed;top:50%;right:30px;z-index:999999999999;transform:translateY(-50%);}
+	.site-navigation button {display:block;margin:10px 0;font-size:14px;color:#fff;cursor:pointer;font-weight:normal;font-family: 'Over the Rainbow', cursive;position:relative;}
+
+	.site-navigation button span:before {content:'';display:block;width:6px;height:6px;border-radius:50%;border:2px solid #fff;position:absolute;top:8px;left:-20px;transition:background .4s ease;}
+	.site-navigation button.on span:before, .site-navigation button:hover span:before {background:#fff;}
+	.site-navigation .to-idea {}
+	.site-navigation .to-change {}
+	.site-navigation .to-everything {}
+
+
+	.scroll-indicator {position:absolute;left:50%;bottom:50px;color:#fff;transform:rotate(90deg) translateX(-50%);z-index:9;font-size:13px;}
+	.scroll-indicator i {margin-left:10px;animation:bounce 0.5s infinite alternate;}
+
+	@keyframes bounce {
+		0% {transform: translateX(0px);}
+		100% {transform: translateX(5px);}
+	}
+
+.typed-cursor{
+	opacity: 1;
+	font-weight: 100;
+	font-size:120px;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	-ms-animation: blink 0.7s infinite;
+	-o-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@media all and (max-width:1600px) {
+.typed-cursor{font-size:80px;}
+}
+@media all and (max-width:640px) {
+.typed-cursor{font-size:40px;}
+}
+
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-ms-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-o-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+	</style>
+
+	<script type="text/javascript">
+	$(window).scroll(function(){
+			if($(window).scrollTop() > 10){
+				$('.scroll-indicator').fadeOut();
+			} else {
+				$('.scroll-indicator').fadeIn();
+			}
+	});
+
+  $(function(){
+
+	var typed1 = new Typed('.js-typed-idea', {
+	  strings: ["First sentence.", "SGDream's Idea"],
+	  typeSpeed: 80,
+	  backDelay: 2000,
+	  loop: true
+	});
+
+	var typed2 = new Typed('.js-typed-change', {
+	  strings: ["First sentence.", "SGDream's Change"],
+	  typeSpeed: 90,
+	  backDelay: 2500,
+	  loop: true
+	});
+
+	var typed3 = new Typed('.js-typed-everything', {
+	  strings: ["First sentence.", "SGDream's Everything"],
+	  typeSpeed: 100,
+	  backDelay: 3000,
+	  loop: true
+	});
+
+
+  });
+	</script>
+
+
+
+	<main>
+	<!--div class="carousel">
+		<nav>
+			<a href="" class="prev">prev</a>
+			<a href="" class="next">next</a>
+		</nav>
+		<ul class="items">
+			<li class="carousel-item">1</li>
+			<li class="carousel-item">2</li>
+			<li class="carousel-item">3</li>
+			<li class="carousel-item">4</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+	jQuery(function($){
+		var num =1;
+		var itemLength = $('.carousel-item').length;
+		function nextItem(){
+			num++;
+			if(num>7) num=1;
+			document.getElementById('gallery').src="images/img"+num+".jpg";
+			return false;
+		}
+	});
+
+	</script-->
+
+		<!--div class="test-transparent item1"></div>
+		<div class="test-transparent item2"></div>
+		<div class="test-transparent item3"></div>
+		<div class="test-transparent item4"></div>
+		<div class="test-transparent item5"></div>
+		<div class="test-transparent item6"></div-->
+
+		<style type="text/css">
+		.test-transparent {width:100%;height:100%;background:transparent;opacity:0;position:absolute;top:0;z-index:99999;}
+		</style>
+
+		<script type="text/javascript">
+		$(function(){
+			var wWidth = $(window).width();
+			var wHeight = $(window).height();
+			$('.test-transparent').height(wHeight);
+			$('.test-transparent.item1').css('top','0');
+			$('.test-transparent.item2').css('top',wHeight);
+			$('.test-transparent.item3').css('top',wHeight * 2);
+			$('.test-transparent.item4').css('top',wHeight * 3);
+			$('.test-transparent.item5').css('top',wHeight * 4);
+			$('.test-transparent.item6').css('top',wHeight * 5);
+
+			$(window).resize(function(){
+				wWidth = $(window).width();
+				wHeight = $(window).height();
+				$('.test-transparent').height(wHeight);
+				$('.test-transparent.item1').css('top','0');
+				$('.test-transparent.item2').css('top',wHeight);
+				$('.test-transparent.item3').css('top',wHeight * 2);
+				$('.test-transparent.item4').css('top',wHeight * 3);
+				$('.test-transparent.item5').css('top',wHeight * 4);
+				$('.test-transparent.item6').css('top',wHeight * 5);
+/*
+				if($(document).width() > 1080){
+
+					$('.test-transparent').on("mousewheel",function(e){
+						if(e.originalEvent.wheelDelta >= 0){
+							var prev = $(this).prev('.test-transparent').offset().top;
+							if($('html,body').is(':animated') === false){
+								$("html,body").stop(false,true).animate({"scrollTop":prev},600,"easeOutCubic");
+							}
+						}
+						if(e.originalEvent.wheelDelta < 0){
+							var next = $(this).next('.test-transparent').offset().top;
+							if($('html,body').is(':animated') === false){
+								$("html,body").stop(false,true).animate({"scrollTop":next},600,"easeOutCubic");
+							}
+						}
+					});
+				}
+*/
+
+			});
+
+			$('.test-transparent').height(wHeight);
+/*
+			if($(document).width() > 1080){
+				$('.test-transparent').on("mousewheel",function(e){
+					if(e.originalEvent.wheelDelta >= 0){
+						var prev = $(this).prev('.test-transparent').offset().top;
+						if($('html,body').is(':animated') === false){
+							$("html,body").stop(false,true).animate({"scrollTop":prev},600,"easeOutCubic");
+						}
+					}
+					if(e.originalEvent.wheelDelta < 0){
+						var next = $(this).next('.test-transparent').offset().top;
+						if($('html,body').is(':animated') === false){
+							$("html,body").stop(false,true).animate({"scrollTop":next},600,"easeOutCubic");
+						}
+					}
+				});
+			}
+*/
+			$('.to-idea').click(function(){
+				$("html,body").stop(false,true).animate({"scrollTop":0},600,"easeOutCubic");
+			});
+			$('.to-change').click(function(){
+				$("html,body").stop(false,true).animate({"scrollTop":wHeight * 2},600,"easeOutCubic");
+			});
+			$('.to-everything').click(function(){
+				$("html,body").stop(false,true).animate({"scrollTop":wHeight * 4},600,"easeOutCubic");
+			});
+
+/*
+			$(window).resize(function(){
+				var winHeight = $(window).height();
+				if($(document).width() > 1080){
+					$('.test-transparent').height(winHeight);
+					$('.section-header').height(winHeight);
+					$('.section-body').height(winHeight);
+				}
+			});
+*/
+
+
+		});
+
+		function scrollMove() {
+		}
+		</script>
+
+
+
+		<section class="content -idea">
+			<header class="section-header js-scroll-section">
+				<h1 class="section-title js-typed-idea"><span class="off-screen">SGDream's IDEA</span></h1>
+				<p>생각 = 아이디어 = 시작</p>
+				<h2>생각드림은 <b>꿈</b>의 구현을 위한 시작을 <b>생각</b>이라고 부릅니다.</h2>
+				<p>우리는 발전적인 미래를 위해 회사 구성원 간 합리적인 의사결정 과정을 끊임없이 훈련하고, <span class="blocking">그 수행의 결과가 고객사의 이상향을 실현하는 시작이 될 수 있도록 합니다.</span></p>
+			</header>
+
+			<div class="section-body js-scroll-section">
+				<div class="inbox">
+					<p class="off-screen" style="position:fixed;left:50%;top:50px;z-index:55;transform:translateX(-50%);">IDEA</p>
+
+					<div class="column -left">
+						<span class="sep-txt">in</span>
+						<header>
+							<h1>생각드림의 <b>철학</b></h1>
+							<h2><span class="off-screen">SGDream's </span><mark class="scroll-ani">Pilosophy</mark></h2>
+						</header>
+						<div class="body">
+							<h3>일 안에서 자유를 찾다.</h3>
+							<p>생각드림이 추구하는 철학은 자신의 ‘역할’과 ‘권리’를 찾는 과정에서 시작합니다.
+								<span class="blocking">가장 먼저 생각드림의 구성원은 하루 24시간 중 1/3 이상의 시간을 함께하는</span>
+								일에서부터 스스로 자유를 찾기 원합니다. 그러기 위해서는
+								자기 자신과 일에 대해 깊이 연구하고, 고민하는 과정을 수반해야 합니다.<br>
+								<span class="blocking">생각드림은 그 과정을 통해 고객사에게는 업무 수행의 만족으로,
+								구성원 개개인에게는 창의적이고, 유연한 삶으로 이어지기를 희망합니다.</span>
+							</p>
+							<p class="iiiii" style="width:335px;margin-top:1em;"><img src="img/pilosophy_brief.png" alt="" /></p>
+						</div>
+					</div>
+
+					<div class="column -right">
+						<span class="sep-txt">out</span>
+						<header>
+							<h1>생각드림의 <b>유토피아</b></h1>
+							<h2><span class="off-screen">SGDream's </span><mark class="scroll-ani">utopia</mark></h2>
+						</header>
+						<div class="body">
+							<h3>고객사의 유토피아를 향하다.</h3>
+							<p>지금 걷고 있는 방향에 높은 벽이 보이네요.<br>
+								그럼 여기서 1도만 방향을 바꿔 볼까요?<br>
+								그리고 100걸음을 걸어봅시다.<br>
+								뭐가 보이나요?<br>
+								생각드림은 고객사가 원하는 유토피아로 향하는 합리적인 생각을 드리겠습니다.<br>
+								지금 어디를 향해 걷고 있나요? 생각드림이 함께 걷겠습니다.
+							</p>
+							<p class="iiiii" style="width:340px;margin-top:1em;"><img src="img/utopia-brief.png" alt="" /></p>
+							<!--div class="icon">
+								<span>
+									<img src="img/icon1-2-1.png" alt="" />
+									<i>분석</i>
+								</span>
+								<span>
+									<img src="img/icon1-2-2.png" alt="" />
+									<i>예측</i>
+								</span>
+								<span>
+									<img src="img/icon1-2-3.png" alt="" />
+									<i>결과도출</i>
+								</span>
+							</div-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="content -change">
+			<header class="section-header js-scroll-section" style="background:#ffc334">
+				<h1 class="section-title js-typed-change"><span class="off-screen">SGDream's Change</span></h1>
+				<p>변화 = 즐거움 = 성장</p>
+				<h2>생각드림은 <b>변화</b>에 설레고, 그 <b>설렘</b>을 즐깁니다.</h2>
+				<p>우리의 생각이 불러오는 긍정적인 변화를 즐김으로써 늘 ‘유연한 사고’를 유지합니다.<span class="blocking">그리고 고객사의 변화만큼 함께 성장해 갑니다.</span></p>
+			</header>
+
+			<div class="section-body js-scroll-section">
+				<div class="inbox">
+					<p class="off-screen" style="position:fixed;left:50%;top:50px;z-index:55;transform:translateX(-50%);">CHANGE</p>
+
+					<div class="column -left">
+						<span class="sep-txt">in</span>
+						<header>
+							<h1>생각드림의 <b>혁신</b></h1>
+							<h2><span class="off-screen">SGDream's </span><mark class="scroll-ani">Innovation</mark></h2>
+						</header>
+						<div class="body">
+							<h3>즐거운 혁신을 추구하다.</h3>
+							<p>생각드림은 좋은 복지와 혜택을 마련해 혁신을 위한 자극을 제공하고자 합니다.<span class="blocking">이 정책의 수립과 제안도 자유로운 소통과 합리적인 의사결정 과정을 통해 이뤄집니다.</span></p>
+							<div class="innovation-list">
+								<div>
+									<h6>탄력근무</h6>
+									<p>지각이 없는 회사, 하지만 자신이 해야 할 일에 대한 프로패셔널 정신은 기본이어야 하는 곳.</p>
+								</div>
+								<div>
+									<h6>쉼</h6>
+									<p>휴식이 필요할 때, 자유롭게 쉴 수 있는 자유가 있다. 다만 그 날 해야할 일만 책임지자.</p>
+								</div>
+								<div>
+									<h6>님</h6>
+									<p>이름을 부르는 회사. 내 이름은 나를 가장 잘 표현한 단어.</p>
+								</div>
+								<div>
+									<h6>파트너</h6>
+									<p>직책은 있지만 직급은 없는 회사. 고객사에게도, 서로에게도 좋은 파트너가 되고자 하는 곳.</p>
+								</div>
+								<div>
+									<h6>구슬 아이스크림</h6>
+									<p>다양성이 존중되는 회사. 색이 다름을 인정할 수 있는 곳. 단, 따스함은 같아야 할 것.</p>
+								</div>
+								<div>
+									<h6>협상</h6>
+									<p>이유만 명확하다면 회사가 못 해줄 것이 없다. 언제든 회사에 요구할 수 있고, 들어주지 못하는 건 회사의 능력 부족.</p>
+								</div>
+								<div>
+									<h6>간식</h6>
+									<p>게으름은 죄다. 하지만 살찌는 것은 죄가 아니다. 먹고 싶은 건 참지 않고 말할 수 있는 권리.</p>
+								</div>
+								<div>
+									<h6>향기</h6>
+									<p>좋은 향기는 좋은 기억을 남긴다. 보이지 않는 쾌적한 환경까지 배려하고자 하는 의지.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column -right">
+						<span class="sep-txt">out</span>
+						<header>
+							<h1>생각드림의 <b>클라이언트</b></h1>
+							<h2><span class="off-screen">SGDream's </span><mark class="scroll-ani">Client</mark></h2>
+						</header>
+						<div class="body">
+							<div class="client-lists">
+								<div><img src="img/client/client08.png" alt="" /><b class="off-screen">이수그룹</b></div>
+                <div><img src="img/client/client13.png" alt="" /><b class="off-screen">행복나눔재단</b></div>
+								<div><img src="img/client/client09.png" alt="" /><b class="off-screen">교보라이프플래닛</b></div>
+								<div><img src="img/client/client11.png" alt="" /><b class="off-screen">에포크라인</b></div>
+								<div><img src="img/client/client07.png" alt="" /><b class="off-screen">디자인하우스</b></div>
+								<div><img src="img/client/client10.png" alt="" /><b class="off-screen">aT한국농수산식품유통공사</b></div>
+								<div><img src="img/client/client06.png" alt="" /><b class="off-screen">한국문화예술위원회</b></div>
+								<div><img src="img/client/client01.png" alt="" /><b class="off-screen">서울특별시한강사업본부</b></div>
+								<div><img src="img/client/client02.png" alt="" /><b class="off-screen">테크노파크협의회</b></div>
+								<div><img src="img/client/client03.png" alt="" /><b class="off-screen">MG새마을금고중앙회</b></div>
+								<div><img src="img/client/client12.png" alt="" /><b class="off-screen">팍스넷</b></div>
+								<div><img src="img/client/client05.png" alt="" /><b class="off-screen">정부 3.0 국민체험마당</b></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="content -everything">
+			<header class="section-header js-scroll-section" style="background:#3f3f3f">
+				<h1 class="section-title js-typed-everything"><span class="off-screen">SGDream's Everything</span></h1>
+				<p>모든 것 = PR = 모티베이터</p>
+				<h2>생각드림은 <b>PR Agency</b> 입니다.</h2>
+				<p>생각드림을 움직이는 동력은 <b>사람과 기술</b>입니다.<span class="blocking">우리는 그것을 ‘모티베이터’라고 부릅니다. 즉, 생각드림이 제공할 수 있는 서비스는 모티베이터의 ‘능력’과 같습니다.</span></p>
+			</header>
+
+			<div class="section-body js-scroll-section">
+				<div class="inbox">
+					<p class="off-screen" style="position:fixed;left:50%;top:50px;z-index:55;transform:translateX(-50%);">Everything</p>
+
+					<div class="column -left">
+						<span class="sep-txt">in</span>
+						<header>
+							<h1>생각드림의 <b>모티베이터</b></h1>
+							<h2><span class="off-screen">SGDream's </span><mark class="scroll-ani">Motivator</mark></h2>
+						</header>
+						<div class="body">
+							<h3>우리가 좋아하는 PR을 잘하기 위해서<br><b>기술</b>의 도움을 받고 있습니다.</h3>
+							<p>
+								‘모티베이터:MOTIVATOR’를 구성하는 ‘기술’은 사회를 구성하고 있는<span class="blocking">다양한 정보를 수집하고, 연결합니다.</span>
+								그리고 ‘사람’은 그 안에 담긴 의미를 도출하고, 해석해 <span class="blocking">PR에 필요한 ‘생각’을 만들어 냅니다.</span>
+								생각드림의 모티베이터는 진보와 발전을 지향할 것이며,
+								<span class="blocking">이를 위한 지속적인 투자를 아끼지 않을 계획입니다.</span>
+							</p>
+							<!--p><a href="mailto:motivator@sgdream.co.kr">이메일 문의하기</a></p-->
+						</div>
+					</div>
+					<div class="column -right">
+						<span class="sep-txt">out</span>
+						<header>
+							<h1>생각드림의 <b>서비스 스콥</b></h1>
+							<h2><span class="off-screen">SGDream's </span><mark class="scroll-ani">Service Scope</mark></h2>
+						</header>
+						<div class="body">
+							<div class="scope-list">
+								<h6>On/Offline Marketing</h6>
+								<ul>
+									<li>SNS</li>
+									<li>Event</li>
+									<li>Promotion</li>
+									<li>Campaign</li>
+								</ul>
+							</div>
+							<div class="scope-list">
+								<h6>Advertising</h6>
+								<ul>
+									<li>SNS</li>
+									<li>Event</li>
+									<li>Promotion</li>
+									<li>Campaign</li>
+								</ul>
+							</div>
+							<div class="scope-list">
+								<h6>PR Tool</h6>
+								<ul>
+									<li>Motivator</li>
+								</ul>
+							</div>
+							<div class="scope-list">
+								<h6>PR Strategy</h6>
+								<ul>
+									<li>Planning</li>
+									<li>Consulting</li>
+									<li>PR Education</li>
+									<li>Crisis Management</li>
+								</ul>
+							</div>
+							<div class="scope-list">
+								<h6>Media Relations</h6>
+								<ul>
+									<li>Publicity</li>
+									<li>Photo Event</li>
+									<li>Press Conference</li>
+									<li>Media tie-up</li>
+									<li>PI</li>
+									<li>CSR</li>
+									<li>Media training</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<script type="text/javascript">
+
+
+
+		$(window).scroll(function(){
+		//	scrollAni();
+/*
+			var abc = $('.content').height() * 2 + $('.content.-idea .section-body').height();
+			var def = $('.content').height()  + $('.content.-change .section-body').height();
+
+			if($(window).scrollTop() > 0 && $(window).scrollTop() < abc){
+				$('.content > div').css('z-index','-2');
+				$('.content.-idea > div').css('z-index','-1');
+			} else if($(window).scrollTop() > abc && $(window).scrollTop() < abc + def){
+				$('.content > div').css('z-index','-2');
+				$('.content.-change > div').css('z-index','-1');
+			} else {
+				$('.content > div').css('z-index','-2');
+				$('.content.-everything > div').css('z-index','-1');
+			}
+
+			if($(window).scrollTop() > $('.-idea .section-header').height()) {
+				$('.-idea').find('.scroll-ani').addClass('on');
+			}
+			if($(window).scrollTop() > abc + 800){
+				$('.-change').find('.scroll-ani').addClass('on');
+			}
+			if($(window).scrollTop() > abc + def){
+				$('.-everything').find('.scroll-ani').addClass('on');
+			}
+
+
+			if($(window).scrollTop() < $('.-idea').height()) {
+				$('.site-navigation button').removeClass('on');
+				$('.to-idea').addClass('on');
+			} else if ($(window).scrollTop() > $('.-idea').height() && $(window).scrollTop() < $('.-idea').height() + $('.-change').height()) {
+				$('.site-navigation button').removeClass('on');
+				$('.to-change').addClass('on');
+			} else {
+				$('.site-navigation button').removeClass('on');
+				$('.to-everything').addClass('on');
+			}
+
+*/
+
+/*
+			if($(window).scrollTop() < $(window).height()){
+				var sT = $(window).scrollTop();
+				$('.-idea .section-title').stop().transition({y:sT},10).removeClass('on');
+			} else {
+
+			}
+
+			if($(window).scrollTop() > 600){
+				$('.-idea .section-title').addClass('fixed').transition({x:'-50%'},10).css('top',-$(window).scrollTop());
+				$('.-idea .section-title').addClass('on');
+			} else {
+				$('.-idea .section-title').removeClass('fixed').transition({x:'0'},10);
+			}
+*/
+		});
+/*
+		function scrollAni() {
+			var scrollEventTarget = $('.scroll-ani');
+			scrollEventTarget.each(function(index){
+				var pos = scrollEventTarget.eq(index).offset().top;
+				if($(window).scrollTop() > $(window).height() - 100) {
+					scrollEventTarget.eq(index).addClass('on');
+				}
+			});
+		}
+*/
+
+
+
+
+		</script>
+
+		<script type="text/javascript">
+
+		$(function(){
+			/*
+			var winHeight = $(window).height();
+
+			$(".js-scroll-section").each(function(index){
+				$(this).attr("data-pos", index * winHeight);
+				//var changeTitle = $(this).attr("data-name");
+			});
+
+
+			$(".js-scroll-section").on("mousewheel",function(e){
+
+				scrPos = parseInt($(this).attr("data-pos"));
+				if (e.originalEvent.wheelDelta >= 0) {
+					if($('html,body').is(':animated') === false) {
+						$("html,body").stop(false,false).animate({scrollTop:scrPos - winHeight},1000);
+						return false;
+					}
+				}
+				if (e.originalEvent.wheelDelta < 0){
+					if($('html,body').is(':animated') === false) {
+						$("html,body").stop(false,false).animate({scrollTop:scrPos + winHeight},1000);
+						return false;
+					}
+				}
+			});
+			*/
+
+
+		});
+
+
+		</script>
+
+	</main>
+
+	<footer class="site-footer" role="contentinfo">
+		<!--address>
+
+			<abbr title="phone"></abbr>
+		</address-->
+		<!--div class="scroll-idx">
+			<button class="nav1">IDEA</button>
+			<button class="nav2">CHANGE</button>
+			<button class="nav3">EVERYTHING</button>
+		</div-->
+		<div class="inbox">
+			<div class="footer-logo"><img src="img/logo02.png" alt="" /></div>
+			<div class="footer-info">
+				<p>서울시 마포구 월드컵북로6길 92 구성빌딩 2층</p>
+				<p>전화 02-717-5561 &nbsp; 팩스 02-717-5564<br>이메일 <a href="mailto:motivator@sgdream.co.kr">motivator@sgdream.co.kr</a></p>
+				<small>© 2017 SGDREAM. ALL RIGHTS RESERVED.</small>
+				<!--small>part of resources are supported by agfont and allowto.</small-->
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
